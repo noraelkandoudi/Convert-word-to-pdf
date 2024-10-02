@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2f2f2f, #1abc9c);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        a {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: #27ae60;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-family: 'Times New Roman', Times, serif; /* Font old style */
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>File convertito!</h1>
+    <p><a href="{{ url_for('download_file', filename=filename) }}">Scarica il file PDF</a></p>
+    <div class="footer">
+        <p>Nora Rich :)</p>
+        <p>Made with ❤️ by Nora Rich</p>
+    </div>
+</body>
+</html>
