@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertire File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2f2f2f, #1abc9c);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-family: 'Times New Roman', Times, serif; /* Font old style */
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convertire {{ filename }} in PDF</h1>
+    <form action="{{ url_for('convert_file', filename=filename) }}" method="post">
+        <button type="submit">Convertire da Word a PDF</button>
+    </form>
+    <div class="footer">
+        <p>Nora Rich :)</p>
+        <p>Made with ❤️ by Nora Rich</p>
+    </div>
+</body>
+</html>
