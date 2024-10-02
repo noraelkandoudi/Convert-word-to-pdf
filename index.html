@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertitore Word a PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2f2f2f, #1abc9c);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-family: 'Times New Roman', Times, serif; /* Font old style */
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convertitore Word a PDF</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".docx" required>
+        <button type="submit">Inserire il file in Word</button>
+    </form>
+    <div class="footer">
+        <p>Nora Rich :)</p>
+        <p>Made with ❤️ by Nora Rich</p>
+    </div>
+</body>
+</html>
